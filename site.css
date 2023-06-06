@@ -1,0 +1,62 @@
+/* Wojan_Mod3_2.css */
+
+html, body {
+font-size: 16px;
+}
+
+body {
+font-family: Georgia, Times, Serif;
+font-size: 12px;
+}
+
+#container {
+margin-top: 50px;
+margin-right: 100px;
+margin-left: 100px;
+}
+
+h1 {
+background-color: #2B2129;
+font-size: 24px;
+color: #E5D1B8;
+padding: 10px;
+border: 1px solid #D6A800;
+}
+
+h2 {
+background-color: #2B2129;
+font-size: 18px;
+color: #E5D1B8;
+padding: 10px;
+border: 1px solid #D6A800;
+}
+
+h3 {
+background-color: #2B2129;
+font-size: 14px;
+color: #E5D1B8;
+padding: 10px;
+border: 1px solid #D6A800;
+}
+
+h4 {
+background-color: #2B2129;
+font-size: 14px;
+color: #E5D1B8;
+padding: 10px;
+border: 1px solid #D6A800;
+}
+
+a:link {
+color:#2B2129 ;
+text-decoration: none;
+}
+
+a:visited {
+color: #708A81;
+}
+
+a:hover {
+color: #DD8E58;
+}
+
