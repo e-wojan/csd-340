@@ -1,0 +1,51 @@
+/* Wojan_Mod4_2.css */
+
+#image-gallery {
+display: grid;
+grid-template-columns: auto auto auto;
+margin-top: 10%;
+}
+
+h1 {
+text-align: center;
+}
+
+h3 {
+text-align: center;
+}
+
+figure {
+text-align: center;
+}
+
+figcaption {
+font-style: italic;
+font-size: .75em;
+}
+
+h1, h3, figcaption {
+color: rgba(221, 142, 88);
+}
+
+img {
+width: 350px;
+height: 400px;
+
+#last {
+width: 100%;
+margin-top: 60%;
+margin-bottom: 20px;
+}
+
+a:link {
+color:#2B2129 ;
+text-decoration: none;
+}
+
+a:visited {
+color: #708A81;
+}
+
+a:hover {
+color: #DD8E58;
+}
