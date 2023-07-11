@@ -1,0 +1,76 @@
+<!-- Emily Wojan : Assignment 10.3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="author" content="Emily Wojan" />
+    <meta name="description" content="An exercise in introductory HTML and CSS" />
+    <meta name="keywords" content="web, design, development, HTML, CSS" />
+    <meta name="robots" content="nofollow"/>
+    <link href="Wojan_Mod10_3.css" rel="stylesheet" />
+    <script>
+		function displayImage(imageFile){
+			 var largerImage = document.getElementById("mainImage");
+			 var newNode = document.createElement("img");
+			 newNode.id = "mainImage";
+			 newNode.src = imageFile;
+			 newNode.alt = "Large Image";
+			 newNode.className = "mainImage";
+			 newNode.style.width = "300px";
+			 newNode.style.height = "200px";
+			 largerImage.parentNode.replaceChild(newNode, largerImage);
+		}
+      </script>
+
+</head>
+<body>
+	<div id="container">
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    </div>
+        <div
+		onmouseover="this.style.color='red';"
+		onmouseout="this.style.color='black';">
+		
+		Run your mouse over the image to change the appearance.
+    <br />
+    </div>
+    <div>
+		<a href=#
+			onmouseover="flower.src='main_flower.jpg';"
+			onmouseout= "flower.src='secondary_flower.jpg';"
+        >
+			<img border = 0 name = "flower" src = "secondary_flower.jpg">
+        </a>
+        </div>
+    <br />
+       <div
+		onmouseover="this.style.color='red';"
+		onmouseout="this.style.color='black';">
+		
+		Run your mouse over the image to change the appearance.
+    <br />
+    </div>
+    <div>
+		<a href=#
+			onmouseover="view.src='primary_view.jpg';"
+			onmouseout= "view.src='secondary_view.jpg';"
+		>
+		<img border = 0 name = "view" src = "secondary_view.jpg">
+		</a>
+    </div>
+    <br />
+    <div
+		onmouseover="this.style.color='red';"
+		onmouseout="this.style.color='black';">
+		
+		Right-click and select View Source for more details.
+	<br />
+    </div>
+	<hr/>
+	<address>
+		<p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+		<p>1000 Galvin Rd S,</p>
+		<p>Bellevue, NE 68005</p>
+	</address>
+</html>
+
