@@ -1,0 +1,74 @@
+<!-- Emily Wojan : Assignment 12.2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Wojan_Mod12_2.css" type="text/css" rel="stylesheet" />
+
+	<script>
+		var books = ["Washington: A Life",
+					"Joe Rochefort's War: The Odyssey of the Codebreaker Who Outwitted Yamamoto at Midway",
+					"Rebecca","Fahrenheit 451","The Pilgrims Progress",
+					"Notes from the Underground","Fall and Rise: The Story of 9/11",
+					"Letters on Ethics","Brave New World","The Canterbury Tales"];
+					
+                    document.getElementById("TopToBottom").onclick = TopToBottom();
+                    document.getElementById("BottomToTop").onclick = BottomToTop();
+                    
+		function TopToBottom() {
+			var orderedList = "";
+			for (var i =0; i < books.length; i++) {
+				orderedList += "<li>" + books[i]+ "</li>";
+			}
+			return document.getElementById("FavBooks").innerHTML = orderedList;
+		}
+		
+		function BottomToTop() {
+			var revOrderList = "";
+			for (var i = books.length; i > 0; i--) {
+				revOrderList += "<li>" + books[i-1]+ "</li>";
+			}
+			return document.getElementById("FavBooks").innerHTML = revOrderList;
+		} 
+	</script>
+
+</head>
+
+<body>
+	<div id="container"></div>
+    <h1 style="text-align: center;">Assignment 12.2: JavaScript - Part 4</h1>
+    <div id="left" style="width: 45%">
+    <h3>Top 10 Favorite Books</h3>
+    
+    <button type="button" onclick="TopToBottom()" id="TopToBottom">Top to Bottom</button>
+    <button type="button" onclick="BottomToTop()" id="BottomToTop">Bottom to Top</button>
+    <hr/>
+
+	<ol id="FavBooks">
+		<li>Washington: A Life</li>
+		<li>Joe Rochefort's War: The Odyssey of the Codebreaker Who Outwitted Yamamoto at Midway</li>
+		<li>Rebecca</li>
+		<li>Fahrenheit 451</li>
+		<li>The Pilgrims Progress</li>
+		<li>Notes from the Underground</li>
+		<li>Fall and Rise: The Story of 9/11</li>
+		<li>Letters on Ethics</li>
+		<li>Brave New World</li>
+		<li>The Canterbury Tales</li>
+	</ol>
+	</div>
+    <div id="right" style="width: 45%; display: inline-block;">
+	<h3>5 Things I've Learned Since the Course Started</h3>
+	<ul>
+		<li>HTML and CSS are not as complicated to learn as I thought they would be.</li>
+		<li>While it is possible to change a website's appearance in HTML, CSS should be used for that purpose.</li>
+		<li>When we read, our eyes move between saccades and fixations.</li>
+		<li>People prefer shorter line lengths, but read faster when the lines are long.</li>
+		<li>You should use JPEG for images with many colors and use GIF or PNG for images with few colors.</li>
+	</ul>
+	</div>
+	<div id="last" style="width: 100%; margin-top: 60%">
+	<a href="../index.html" style="float: right">Back to Landing Page</a>
+	</div>
+</html>
+

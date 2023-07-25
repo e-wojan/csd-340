@@ -1,0 +1,52 @@
+/* Wojan_Mod12_2.css */
+
+h1 {
+text-align: center;
+}
+
+h3 {
+font-weight: 500;
+}
+
+#left {
+width: 45%;
+float: left;
+border: 1px solid red;
+border-radius: 15px;
+padding: 10px;
+}
+
+#right {
+width:45%;
+float: right;
+border: 1px dashed red;
+border-radius: 15px;
+padding: 10px;
+}
+
+#last {
+width: 100%;
+margin-top: 60%;
+margin-bottom: 20px;
+}
+
+ol {
+font-weight: 300;
+list-style-position: inside;
+padding: 5px;
+}
+
+ul {
+font-weight: 300;
+list-style-type: upper-roman;
+}
+
+a{
+float: right;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
